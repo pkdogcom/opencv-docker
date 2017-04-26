@@ -1,7 +1,7 @@
 # opencv-docker
 Dockerfile for OpenCV 3.2 with CUDA enabled 
 
-# Requirements
+# Prerequisites
 A CUDA 8.0 capable driver is required.
 
 # Run with GUI
