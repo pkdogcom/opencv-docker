@@ -21,8 +21,6 @@ RUN \
 
     cd ~ && \
     git clone https://github.com/Itseez/opencv_contrib.git && \ 
-    cd opencv_contrib && \ 
-    git checkout -b v3.2.0 3.2.0 &&\
 
     cd ~/opencv && \ 
     mkdir build && \ 
