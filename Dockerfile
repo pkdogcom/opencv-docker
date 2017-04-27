@@ -5,7 +5,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
         build-essential cmake git wget && \
     apt-get install -y --no-install-recommends \
 	pkg-config unzip ffmpeg qtbase5-dev python-dev python-numpy python-py \
-	libgtk2.0-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev zlib1g-dev libglew-dev \ 
+	libgtk2.0-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev zlib1g-dev libglew-dev libprotobuf-dev \ 
 	libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev \	
         libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev \
         libvorbis-dev libxvidcore-dev v4l-utils libhdf5-serial-dev libeigen3-dev libtbb-dev libpostproc-dev && \
@@ -15,11 +15,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 RUN \
     cd ~ && \ 
     git clone https://github.com/Itseez/opencv.git && \
-    cd opencv && \
-    pwd && \
-    git checkout -b v3.2.0 3.2.0 &&\
-
-    cd ~ && \
     git clone https://github.com/Itseez/opencv_contrib.git && \ 
 
     cd ~/opencv && \ 
